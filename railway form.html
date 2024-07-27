@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="device-width-device,initial scale=1.0">
+    <title>Railway ticket registration form</title>
+    <link rel="stylesheet"href="style.css">
+    <head>
+        <style>
+          body{
+            font-family: Arial, sans-serif;
+            background-color: rgb(99, 40, 40);
+          }
+          .container{
+            max-width: 500px;
+            margin:0 auto;
+            padding: 20px;
+            background-color: rgb(69, 98, 62);
+            border: 1px solid #1c8940;
+            box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+          }
+          form{
+            margin-top: 10px;
+            align-items: center;
+            width: 50%;
+            height: 50%;
+          }
+          label{
+            display: block;
+            margin-bottom: 5px;
+          }
+          input[type="text"],input[type="number"],
+          input[type="date"]{
+               width: 100%;
+               padding: 10px;
+               margin-bottom: 20px;
+               border:1px solid #ccc;
+               text-align: center;
+          }
+          input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          input[type="submit"]:hover{
+            background-color: #0069d9;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h3><center>RAILWAY TICKET REGISTRATION </center></h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text"id="name"name="name">
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number"id="age"name="age">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender"name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">others</option>
+            </select>
+            <br><br>
+            <label for="from">From:</label>
+            <input type="text"id="from"name="from">
+            <br><br>
+            <label for="to">TO:</label>
+            <input type="text"id="to"name="to">
+            <br><br>
+            <label for="date">Date:</label>
+            <input type="date"id="date"name="date">
+            <br><br>
+            <label for="class">Class:</label>
+            <select id="class"name="class">
+                <option value="first">First class</option>
+                <option value="second">Second class</option>
+            </select>
+            <br><br>
+            <input type="submit"value="Register">
+        </form>
+        </div>
+    </body>
+</html>
